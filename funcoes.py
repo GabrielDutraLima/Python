@@ -402,7 +402,7 @@ def potencia(x, y):
     return x ** y
 
 
-lista = [1, 2, 3, 4, 5, 6]
+lista = [1, 2, 3, 4, 5, 6, 7]
 
 listaSoma = [soma(numero, 2) for numero in lista]
 listaMulti = [multi(numero, 2) for numero in lista]
