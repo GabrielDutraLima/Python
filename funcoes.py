@@ -406,13 +406,13 @@ lista = [1, 2, 3, 4, 5, 6]
 
 listaSoma = [soma(numero, 2) for numero in lista]
 listaMulti = [multi(numero, 2) for numero in lista]
+listaPot = [potencia(numero, 2) for numero in lista]
 
 
 
 print(listaSoma)
 print(listaMulti)
-
-
+print(listaPot)
 
 
 
