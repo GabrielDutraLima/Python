@@ -390,7 +390,7 @@ print(sub)
 print(multi)
 print(divi)
 print(quad)
-"""
+
 
 def soma(x, y):
     return x + y
@@ -416,13 +416,48 @@ print(listaPot)
 
 
 
+lista = []
+dicionario = {}
+conjunto = set()
+tupla = ()
+string = ''
+inteiro = 0
+flutuante = 0.0
+nada = None
+falso = False
+intervalo = range(0)
+
+def falsy(valor):
+    return 'falsy' if not valor else 'truthy'
 
 
+print(f'TESTE', falsy('TESTE'))
+print(f'{lista=}', falsy(lista))
+print(f'{dicionario=}', falsy(dicionario))
+print(f'{conjunto=}', falsy(conjunto))
+print(f'{tupla=}', falsy(tupla))
+print(f'{string=}', falsy(string))
+print(f'{inteiro=}', falsy(inteiro))
+print(f'{flutuante=}', falsy(flutuante))
+print(f'{nada=}', falsy(nada))
+print(f'{falso=}', falsy(falso))
+print(f'{intervalo=}', falsy(intervalo))
 
+"""
 
+# Generator expression, Iterables e Iterators em Python
+iterable = ['Eu', 'Tenho', '__iter__']
+iterator = iter(iterable)  # tem __iter__ e __next__
+lista = [n for n in range(1000000)]
+generator = (n for n in range(1000000))
 
+print(sys.getsizeof(lista))
+print(sys.getsizeof(generator))
 
+print(generator)
 
+# for n in generator:
+#     print(n)
 
 
 
